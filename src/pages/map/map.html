@@ -1,0 +1,22 @@
+<!--
+  Generated template for the MapPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <div><img class="logo" src="../../assets/imgs/logo.png" /></div>
+    </ion-navbar>
+  
+  </ion-header>
+
+<ion-content padding>
+    <agm-map [latitude]="24.9295746" [longitude]="67.1129567" [zoom]="16">
+        <agm-marker [markerDraggable]="true" [latitude]="24.9295746" [longitude]="67.1129567" (dragEnd)="drag($event)"></agm-marker>
+    </agm-map>
+</ion-content>
+<ion-footer>
+  <button ion-button full>Set Dustbin</button>
+</ion-footer>
